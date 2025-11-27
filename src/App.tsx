@@ -96,10 +96,10 @@ function App() {
     }
   };
 
-  // ✅ CORRECCIÓN: Calcular estadísticas con TODOS los juegos, no solo los filtrados
-  const totalGames = games.length; // ← Cambiado de filteredGames.length
-  const completedGames = games.filter(game => game.completed).length; // ← Cambiado
-  const favoriteGames = games.filter(game => game.favorite).length; // ← Cambiado
+
+  const totalGames = games.length;
+  const completedGames = games.filter(game => game.completed).length;
+  const favoriteGames = games.filter(game => game.favorite).length;
 
   return (
     <div className="app">
