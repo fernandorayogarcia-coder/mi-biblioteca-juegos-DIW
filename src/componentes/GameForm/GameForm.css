@@ -1,0 +1,131 @@
+.game-form {
+  background: white;
+  padding: 40px;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.game-form h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 1.05rem;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: white;
+  color: #2d3748;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rating-star {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e2e8f0;
+  padding: 5px;
+}
+
+.rating-star.active {
+  color: #f6e05e;
+}
+
+.rating-text {
+  margin-left: 15px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-checkboxes {
+  display: flex;
+  gap: 25px;
+  margin: 30px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 12px 18px;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.checkbox-label input {
+  margin: 0;
+  transform: scale(1.2);
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .game-form {
+    padding: 30px 20px;
+  }
+  
+  .form-checkboxes {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-form {
+    padding: 25px 15px;
+  }
+  
+  .form-checkboxes {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
