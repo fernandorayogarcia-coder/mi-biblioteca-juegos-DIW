@@ -108,7 +108,6 @@
   margin: 0 auto;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .game-form {
     padding: 30px 20px;

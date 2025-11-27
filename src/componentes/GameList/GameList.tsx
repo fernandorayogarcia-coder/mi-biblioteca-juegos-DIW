@@ -13,7 +13,7 @@ interface Game {
 interface GameListProps {
   games: Game[];
   onDeleteGame: (gameId: number) => void;
-  onEditGame: (gameId: number) => void; // ← AÑADIR esta línea
+  onEditGame: (gameId: number) => void;
 }
 
 export function GameList({ games, onDeleteGame, onEditGame }: GameListProps) {
@@ -34,7 +34,7 @@ export function GameList({ games, onDeleteGame, onEditGame }: GameListProps) {
               favorite={game.favorite}
               rating={game.rating}
               onDelete={onDeleteGame}
-              onEdit={onEditGame} // ← Esta prop ya existe
+              onEdit={onEditGame}
             />
           ))}
         </div>

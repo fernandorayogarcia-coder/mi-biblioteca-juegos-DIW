@@ -9,7 +9,7 @@ interface GameCardProps {
   favorite: boolean;
   rating: number;
   onDelete: (gameId: number) => void;
-  onEdit: (gameId: number) => void; // ← AÑADIR esta línea
+  onEdit: (gameId: number) => void;
 }
 
 export function GameCard({ 
@@ -20,7 +20,7 @@ export function GameCard({
   favorite, 
   rating, 
   onDelete,
-  onEdit // ← Asegurarse de que está aquí
+  onEdit
 }: GameCardProps) {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -35,7 +35,7 @@ export function GameCard({
   };
 
   const handleEdit = () => {
-    onEdit(id); // ← Esta función ahora está definida
+    onEdit(id);
   };
 
   return (

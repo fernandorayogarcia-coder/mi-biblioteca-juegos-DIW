@@ -35,7 +35,6 @@ export function Header({
     <header className="header">
       <h1>🎮 GameHub - Mi Biblioteca</h1>
       
-      {/* Input de búsqueda */}
       <div className="search-container">
         <input
           type="text"
@@ -46,7 +45,6 @@ export function Header({
         />
       </div>
 
-      {/* Filtros */}
       <div className="filters-container">
         <div className="filter-group">
           <label>Categoría:</label>
@@ -76,7 +74,6 @@ export function Header({
           </select>
         </div>
 
-        {/* Botones de gestión - EXTRA */}
         <div className="management-buttons">
           <button 
             onClick={onResetLibrary}

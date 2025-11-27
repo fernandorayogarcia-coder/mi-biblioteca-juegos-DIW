@@ -12,7 +12,6 @@ interface GameFormProps {
 }
 
 export function GameForm({ onAddGame }: GameFormProps) {
-  // Estados para los campos del formulario - REQUISITO useState
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('Aventura');
   const [completed, setCompleted] = useState(false);
@@ -27,7 +26,6 @@ export function GameForm({ onAddGame }: GameFormProps) {
       return;
     }
 
-    // Llamamos a la función prop para agregar el juego
     onAddGame({
       title: title.trim(),
       category,
@@ -36,7 +34,6 @@ export function GameForm({ onAddGame }: GameFormProps) {
       rating
     });
 
-    // Resetear el formulario
     setTitle('');
     setCategory('Aventura');
     setCompleted(false);
